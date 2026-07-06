@@ -21,15 +21,6 @@
 };
 
 / {
-    vcc_power: vcc_power {
-        compatible = "regulator-fixed";
-        regulator-name = "vcc_power";
-        enable-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-        regulator-always-on;
-        regulator-boot-on;
-        startup-delay-us = <50000>; 
-    };
-
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
