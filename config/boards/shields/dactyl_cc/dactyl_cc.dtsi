@@ -17,6 +17,7 @@
         com-invdir;
         com-sequential;
         prechargep = <0x22>;
+        vin-supply = <&vcc_power>;
     };
 };
 
@@ -73,8 +74,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
         compatible = "regulator-fixed";
         regulator-name = "vcc_power";
         enable-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-        regulator-always-on;
-        regulator-boot-on;
-        startup-delay-us = <50000>; 
+        /* startup-delay-us = <50000>; /* Gives the OLED 50ms to wake up */ */
     };
 };
