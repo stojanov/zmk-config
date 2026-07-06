@@ -4,7 +4,7 @@
     status = "okay";
 
     oled: ssd1306@3c {
-        compatible = "sinowealth,sh1106fb";
+        compatible = "solomon,ssd1306fb";
         status = "okay";
         reg = <0x3c>;
         width = <128>;
