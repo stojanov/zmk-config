@@ -1,20 +1,20 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <dt-bindings/pinctrl/nrf-pinctrl.h>
 
 &pro_micro_i2c {
     status = "okay";
 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
+        status = "okay";
         reg = <0x3c>;
         width = <128>;
         height = <32>;
         segment-offset = <0>;
         page-offset = <0>;
-        display-offset = <0>;
         com-sequential;
         multiplex-ratio = <31>;
         prechargep = <0x22>;
+        display-offset = <0>;
         segment-remap;
         com-invdir;
     };
@@ -68,10 +68,10 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
     };
 };
 
-/ {
-    ext-power {
-        compatible = "zmk,ext-power-generic";
-        control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-        /* init-delay-ms = <50>; */
-    };
-};
+/* / { */
+/*     ext-power { */
+/*         compatible = "zmk,ext-power-generic"; */
+/*         control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; */
+/*         init-delay-ms = <50>; */
+/*     }; */
+/* }; */
