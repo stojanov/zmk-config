@@ -68,10 +68,20 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                   RC(3,11) RC(3,
     };
 };
 
-/ {
-    ext-power {
-        compatible = "zmk,ext-power-generic";
-        control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-        init-delay-ms = <50>;
+&gpio0 {
+    status = "okay";
+
+    force_oled_power {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>; 
+        output-high;
     };
-};
+
+}; 
+/* / { */
+/*     ext-power { */
+/*         compatible = "zmk,ext-power-generic"; */
+/*         control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; */
+/*         init-delay-ms = <50>; */
+/*     }; */
+/* }; */
