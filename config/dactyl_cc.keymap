@@ -89,7 +89,7 @@
                      display-name = "Lower";
                      bindings = <
 &kp F12       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
-&mo KSET      &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &none         &none         &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &mo KSET
+&mo KSET      &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &none         &none         &kp LC(1)     &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(9)     &none
 &trans        &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &trans
 &trans        &kp LG(TAB)   &kp GC(LEFT)  &kp GC(RIGHT) &kp MEH(N)    &kp MEH(M)    &kp MEH(N)    &kp MEH(M)    &kp GC(LEFT)  &kp GC(RIGHT) &kp LG(TAB)   &trans
               &none         &kp C_PP      &kp C_PREV    &kp C_NEXT                                &kp VOL_DN    &kp VOL_UP    &kp C_MUTE    &none
@@ -103,8 +103,8 @@
                      display-name = "Settings";
                      bindings = <
 &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none         &none         &none         &none         &none
-&mo KSET      &out OUT_USB  &out OUT_BLE  &none         &sys_reset    &none         &none         &sys_reset    &none         &none         &none         &none
-&trans        &tog KMAC     &tog KSH      &none         &none         &to KGAM      &none         &none         &none         &none         &none         &none
+&none         &out OUT_USB  &out OUT_BLE  &none         &sys_reset    &none         &none         &sys_reset    &none         &none         &none         &none
+&trans        &none         &tnone        &none         &none         &none      &none         &none         &none         &none         &none         &none
 &none         &none         &bt BT_CLR    &none         &none         &bootloader   &bootloader   &none         &none         &none         &none         &none
               &none         &none         &none         &none                                     &none         &none         &none         &none
                                                         &none         &none         &none         &none
