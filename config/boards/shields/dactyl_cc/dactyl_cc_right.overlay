@@ -19,5 +19,5 @@
 
 &oled {
     /delete-property/ segment-remap;
-    /delete-property/ com-invdir;
+    com-invdir;
 };
