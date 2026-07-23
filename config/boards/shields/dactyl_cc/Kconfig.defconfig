@@ -1,7 +1,7 @@
 if SHIELD_DACTYL_CC_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "stojanov's Dactyl CC"
+        default "Stojanov Keeb"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
@@ -10,7 +10,7 @@ endif
 if SHIELD_DACTYL_CC_RIGHT
 
     config ZMK_KEYBOARD_NAME
-        default "stojanov's Dactyl CC Right"
+        default "Stojanov Keeb R"
 
 endif
 
