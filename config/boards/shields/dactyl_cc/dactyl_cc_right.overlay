@@ -16,3 +16,8 @@
         , <&gpio0 22 GPIO_ACTIVE_HIGH> // col5 in the schematic
         ;
 };
+
+&oled {
+    /delete-property/ segment-remap;
+    /delete-property/ com-invdir;
+};
